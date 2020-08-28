@@ -98,11 +98,12 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 .location span{
     width:100%;
     margin-bottom: 5px;
 }
-.location img{
+.loc img{
     width:70px;
     float: left;
     margin-left: 20px;
@@ -125,7 +126,7 @@ body{
     background-color: #F1F1F1;
     opacity: .70;
 }
-.location h4{
+.loc h4{
     text-align: center;
     color:blue;
     font-size: 16px;
@@ -141,34 +142,37 @@ body{
 
 #history{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     margin-top: 80px;
     justify-content:center;
     align-items: center;
     background-color: #F1F1F1;
-    opacity: .70;
+    opacity: .60;
+    border:2px black solid;
 }
 #history h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: red;
     font-size: 30px;
+    padding-bottom: 10px;
     
 }
 #history img{
     width:600px;
-    padding-right: 5px;
+    padding-top:10px;
 }
 .katies{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    border:2px black solid;
 }
+
 .katies p{
     font-size: 16px;
     color: black;
-    padding:10px 10px 10px;
+    padding-bottom: 10px;
+    
 }
 
 /*iCECREAM HISTORY*/
@@ -229,7 +233,7 @@ body{
     width:100%;
     margin-bottom: 10px;
     padding-top:10px;
-    font-size: 25px;
+    font-size: 20px;
     color:red;
     font-family: 'Dancing Script', cursive;
     text-align: center;
@@ -343,17 +347,21 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #F1F1F1;
-    width:1500px;
 }
+.nutritional div{
+    border:2px black solid;
+    background-color:rgb(240, 175, 175);
+}
+
     
 .nutritional img{
     width:100%;
     padding: 5px 20px 20px;
 }
-.nutritional h5, h6{
+.nutritional h5{
     text-align: center;
     color:blue;
-    font-weight: 600;
+    font-size: 14px;
 }
 
 /*Contact Us*/
