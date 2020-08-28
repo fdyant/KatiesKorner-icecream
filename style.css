@@ -3,111 +3,91 @@
     padding:0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Courier New', Courier, monospace;
     background-image: url("https://images.unsplash.com/photo-1560801530-34efebfecba8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .logo{
     display: flex;
-    align-content: center;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
 }
 .logo img{
     width:100px;
-    margin-left: 25%;
     margin-top: 20px;
 }
-
-.header {
-    margin: 30px 25px 30px;
+.header{
+    text-align: center;
+    padding:15px 15px;
+    
+}
+.flag img {
+    width:100px;
+    float: right;
 }
 .header h2{
     font-family: 'Dancing Script', cursive;
-    font-size:60px;
-    color: red; 
+    font-size:50px;
+    color:rgb(245, 9, 9) ; 
+    text-shadow: 2px 2px 2px whitesmoke;
 }
-.header h4{
+.header h3{
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 2px;
-    font-size: 35px;
+    font-size: 25px;
     color: rgb(50, 50, 248);
     text-align: center; 
+    text-shadow: 2px 2px 2px whitesmoke;
 }
 /*dropdown menu*/
-
 .dropdown {
-    height: 7vh;
-    display: flex;
-    justify-content: space-around;
+    display:flex;
+    justify-content: center;
     align-items: center;
-    opacity:.70;
-    margin-top:15px;
-    background-color: rgb(248, 245, 239);
 }
-
-.about ul, 
-.flavor ul,
-.contact ul {
-    position: absolute;
-    width:220px;
-    height:100px;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: column;
+.dropdown ul{
+    margin: 0px;
+    padding: 0px;
     list-style: none;
-    border-radius: 5px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: all 0.4s ease;
-    border: #1d1c1c 2px bold;
-    padding-bottom: 5px;
-}
-.about li, 
-.flavor li,
-.contact li {
-    padding:5px 5px 5px;
-    width:85%;
-    height:100%;
-    display: flex;
-    background-color: #F1F1F1;
-    border:black 2px solid;
-    border-radius: 10px;
-} 
-.about li :hover, 
-.flavor li :hover,
-.contact li :hover {
-    border-radius: 5px;
-    color:blue;
-    font-weight:bolder;
-}
-.about a,
-.flavor a,
-.contact a {
-    color:black;
-    text-decoration:none;
+    font-family: arial;
 }
 
-.dropdown button,
-.home, .history{
-    background:none;
-    border: none;
-    color: rgb(8, 1, 1);
-    text-decoration:none;
+.dropdown ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(88, 17, 17);
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
     font-size: 18px;
-    cursor: pointer;
+    margin-right: 5px;
 }
 
-.about button:focus + ul,
-.flavor button:focus + ul,
-.contact button:focus + ul{
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(0px);
+.dropdown ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
 }
+
+.dropdown ul li a:hover {
+    background-color: blue;
+}
+
+.dropdown ul li ul li{
+    display: none;
+}
+
+.dropdown ul li:hover ul li {
+    display: block;
+}
+
 
 /*LOCATIONS*/
 
@@ -120,7 +100,7 @@ body{
 }
 .location span{
     width:100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .location img{
     width:70px;
@@ -130,9 +110,10 @@ body{
 .location p{
     font-size: 35px;
     text-align: center;
-    color:red ;
+    color:rgb(245, 9, 9) ;
     letter-spacing: 2px;
-    font-weight:bolder;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 2px 2px 2px #1d1c1c;
 }
 
 .location div{
@@ -146,15 +127,13 @@ body{
 }
 .location h4{
     text-align: center;
-    font-weight: bolder;
     color:blue;
-    font-size: 18px;
+    font-size: 16px;
 }
 .loc h5, address{
     text-align:center;
     font-size:16px;
     padding:5px 5px;
-    font-weight: 900;
 }
 
 
@@ -164,135 +143,134 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 80px;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
+    background-color: #F1F1F1;
+    opacity: .70;
 }
-.history h2{
+#history h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: red;
     font-size: 30px;
     
 }
-.store{
+#history img{
     width:600px;
-    padding-right: 15px;
-    
+    padding-right: 5px;
 }
 .katies{
-    background-color: #F1F1F1;
-    width:800px;
-    opacity: 0.70;
-    height: 450px;
+    display: flex;
+    flex-direction: column;
     padding-left: 20px;
+    border:2px black solid;
 }
 .katies p{
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     padding:10px 10px 10px;
-    font-weight:700;
 }
 
 /*iCECREAM HISTORY*/
 
-.history-icecream {
+#icecream{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 20px;
     background-color: #F1F1F1;
-    opacity: .75;
+    opacity: .70;
 }
-.history-icecream h2{
+
+#icecream h2{
     text-align: center;
     color:blue;
     margin-top:10px;
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
 }
-.history-icecream > div{
-    margin: 10px;
-    border: 2px solid black;
-    background-color: #F1F1F1;
-    
-}
-.history-icecream li{
-    display: flex;
-    padding:10px 5px 10px;  
-    font-size: 18px; 
 
-}
-.part1 ul .part2 ul .part3 ul .part4 ul{
-    position: absolute;
-    display: inline;
-    justify-content: space-between;
-    align-content: center;
+#icecream > div{
+    display:flex;
     flex-direction: column;
-    border-radius: 5px;
-    border: #1d1c1c bold;
-    padding-bottom: 5px;
+    flex-wrap: wrap;
+    margin:10px;
+    padding-left:10px;
+    border: 2px solid black;
 }
+
+#icecream li{
+    display: flex;
+    padding:5px 5px 5px;  
+    font-size: 16px; 
+}
+
 
 /*TRIVIA*/
 .trivia{
     display: flex;
     flex-direction: row;
-    margin-top:30px;
-    justify-content:space-between;
+    margin-top:20px;
+    align-content: center;
+    justify-content:space-around;
     flex-wrap: wrap;
     background-color:#F1F1F1;
     opacity:.75;
 }
-.ice h2{
-    text-align: center;
-    margin-top: 20px;
 
-}
 .trivia div{
     border: #1d1c1c 2px solid;
     padding:5px 5px 5px;
-    align-content:stretch;
     width:350px;
-    margin-top: 10px;
-    margin:15px 15px 15px;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
-.trivia span{
+.trivia span, .h2{
     width:100%;
     margin-bottom: 10px;
+    padding-top:10px;
     font-size: 25px;
     color:red;
     font-family: 'Dancing Script', cursive;
+    text-align: center;
 }
 .trivia li{
     display: flex;
     text-align: justify;
-    padding:7px;
+    padding:5px;
 }
 .trivia img{
     display: flex;
     width:100%;
 }
 /*FLAVOR*/
+
 #katiesflavor{
     display: flex;
     flex-direction: row;
     margin-top:80px;
-    justify-content: space-evenly;
+    justify-content:space-around;
     flex-wrap: wrap; 
     background-color:#F1F1F1;
-    opacity: .80;
+    opacity: .70;
+    align-content: center;
 }
 #katiesflavor span, h4{
     width:100%;
     margin-top: 5px;
     text-align: center;
-    font-size: 30px;
+    font-size:25px;
     color:red;
-    font-weight: 900;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 2px;
+}
+#nutri p{
+    font-size:18px;
+    color:blue;
+    font-family: 'Luckiest Guy', cursive;
 }
 #katiesflavor div{
     justify-content: space-around;
-    
     margin-top: 20px;
     background-color: #F1F1F1;
     opacity: .70;
@@ -306,7 +284,7 @@ body{
 .popular p, h5{
     font-size:16px;
     text-align: left;
-    color: #4d0101;
+    color: #b30505;
 }
 .others{
     display: flex;
@@ -314,19 +292,22 @@ body{
     padding-left: 50px;
     background-color: #F1F1F1;
     opacity: .70;
+    justify-content: center;
+    margin-top: 10px;
 }
-.others div{
+.others > div{
     padding:5px 5px 5px;
     align-content: space-between;
     width:400px; 
 }
-.others span, p{
+.others p{
     width:100%;
     margin-top: 5px;
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     color:red;
-    font-weight:700;
+    font-weight:600;
+    padding-bottom: 5px;
 }
 
 .others li{
@@ -338,74 +319,81 @@ body{
 
 /*nutritional*/
 
+#nutri{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+    justify-content:space-around;
+    flex-wrap: wrap; 
+    background-color:#F1F1F1;
+    opacity: .70;
+    align-content: center;
+}
+#nutri h4{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#nutri p{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 .nutritional{
     display: flex;
     flex-direction: row;
     background-color: #F1F1F1;
-    opacity:.70;
+    width:1500px;
 }
     
-.nutritional div{
-    justify-content: space-between;
-    padding:5px 5px 5px;
-    width:400px;
-    border:2px black solid;
-}
 .nutritional img{
-    width:90%;
-    padding-left:30px;
+    width:100%;
+    padding: 5px 20px 20px;
 }
 .nutritional h5, h6{
     text-align: center;
-    color: red;
+    color:blue;
     font-weight: 600;
-    font-size: 18px;
 }
-.info {
-    background-color: #F1F1F1;
-    opacity: .70;
-}
-.info h3{
-    text-align: center;
-    font-size: 25px;
-    color: blue;
-    margin-top: 20px;
-}
-/*FRANCHISE*/
-.questions{
+
+/*Contact Us*/
+#franchise{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     background-color: #F1F1F1;
-    width:800px;
+    justify-content: center;
+    align-items: center;
     opacity: .70;
     margin-top: 30px;
-    align-items: center;
-    margin-left: 25%;
     border: #1d1c1c 2px solid;
     padding:15px 15px;
 }
-.questions div{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    
+#franchise h2{
+    font-size: 30px;
+    text-align: center;
+    color:rgb(245, 9, 9) ;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Luckiest Guy', cursive;
+    padding-bottom: 20px;
 }
-.questions h3{
+#franchise h3{
+    padding:10px 10px;
     font-size: 20px;
     color: blue;
-    text-align:left;
 }
-.questions p{
+#franchise p{
     font-size:16px;
-    color: rgb(15, 1, 1);
+    color:rgb(15, 1, 1);    
 }
-.questions ul{
-    padding: 25px 25px 25px;
-    color: #d61010;
-    font-weight: 600;
+
+#application ul{
+    padding: 25px 20px;
+    color: #eb1515;
+    font-weight: 700;
+    font-size:18px;
 }
+
+
 
 /*footer*/
 .footer p{
