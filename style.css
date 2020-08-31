@@ -47,37 +47,37 @@ body{
 }
 /*dropdown menu*/
 .dropdown {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    position:absolute;
+    width:100%;
+    z-index:20;
 }
 .dropdown ul{
-    margin: 0px;
-    padding: 0px;
+    margin:auto;
+    padding: 0px; 
     list-style: none;
-    font-family: arial;
 }
 
 .dropdown ul li {
     float: left;
-    width: 200px;
-    height: 40px;
-    background-color: rgb(88, 17, 17);
-    opacity: .8;
+    width:200px;
+    background-color: rgb(184, 69, 69);
     line-height: 40px;
     text-align: center;
     font-size: 18px;
-    margin-right: 5px;
+    font-weight: 600;
+    margin:5px;
+    opacity:.9;
 }
 
 .dropdown ul li a {
     text-decoration: none;
-    color: white;
+    color:#F1F1F1;
     display: block;
+    
 }
-
 .dropdown ul li a:hover {
-    background-color: blue;
+    background-color: rgb(1, 1, 241);
 }
 
 .dropdown ul li ul li{
@@ -85,7 +85,7 @@ body{
 }
 
 .dropdown ul li:hover ul li {
-    display: block;
+    display:block;
 }
 
 
@@ -94,7 +94,7 @@ body{
 .location {
     display: flex;
     flex-direction: row;
-    margin-top:80px;
+    margin-top:60px;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -143,12 +143,13 @@ body{
 #history{
     display: flex;
     flex-direction:column;
-    margin-top: 80px;
+    margin-top: 50px;
     justify-content:center;
     align-items: center;
     background-color: #F1F1F1;
     opacity: .60;
     border:2px black solid;
+    margin-top:60px;
 }
 #history h2{
     text-align: center;
@@ -181,7 +182,6 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-top: 20px;
     background-color: #F1F1F1;
     opacity: .70;
 }
@@ -252,7 +252,7 @@ body{
 #katiesflavor{
     display: flex;
     flex-direction: row;
-    margin-top:80px;
+    margin-top:60px;
     justify-content:space-around;
     flex-wrap: wrap; 
     background-color:#F1F1F1;
@@ -372,7 +372,7 @@ body{
     justify-content: center;
     align-items: center;
     opacity: .70;
-    margin-top: 30px;
+    margin-top: 60px;
     border: #1d1c1c 2px solid;
     padding:15px 15px;
 }
@@ -400,8 +400,15 @@ body{
     font-weight: 700;
     font-size:18px;
 }
-
-
+#application a{
+    background-color: #f44336;
+    color:#F1F1F1;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: #1d1c1c 1px solid;
+}
 
 /*footer*/
 .footer p{
@@ -409,9 +416,14 @@ body{
     text-align: center;
     padding: 10px;
     margin-top: 30px;
-    opacity: .75;
+    opacity: .70;
     color: blue;
     font-weight: bold;
     font-size: 18px;
-    
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .trivia img {
+      width: 90%;
+    }
+  }
