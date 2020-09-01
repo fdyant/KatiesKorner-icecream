@@ -178,7 +178,7 @@ body{
     justify-content:center;
     align-items: center;
     background-color: #F1F1F1;
-    opacity: .60;
+    opacity: .80;
     border:2px black solid;
 }
 #history h2{
@@ -190,9 +190,16 @@ body{
     
 }
 #history img{
-    width:600px;
+    width:400px;
     padding-top:10px;
 }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    #history img{
+        width:70%;
+    }
+}
+
+
 .katies{
     display: flex;
     flex-direction: column;
