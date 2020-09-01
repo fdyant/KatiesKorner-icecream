@@ -45,7 +45,7 @@ body{
     text-align: center; 
     text-shadow: 2px 2px 2px whitesmoke;
 }
-/*small screen only*/
+/*small screen only
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .logo img, 
     .flag img{
@@ -55,7 +55,7 @@ body{
     font-size:14px;
     }
 }
-
+*/
 
 /*dropdown menu*/
 .dropdown {
@@ -104,7 +104,8 @@ body{
 /*small screen only*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .dropdown {
-        width:50%;       
+        width:50%; 
+        float: none;   
     }
     .dropdown ul li a{
         width:50%;
