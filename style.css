@@ -104,11 +104,11 @@ body{
 /*small screen only*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .dropdown {
-        width:50%; 
+        width:95%; 
         float: none;   
     }
     .dropdown ul li a{
-        width:50%;
+        width:95%;
         float:none;
         font-size:12px;
     }
@@ -164,10 +164,10 @@ body{
 /*small screen only*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .location p{
-        font-size:16px;
+        font-size:18px;
     }
     .location div{
-        width:75%;
+        width:95%;
     }
 }
 /*KATIES HISTORY*/
