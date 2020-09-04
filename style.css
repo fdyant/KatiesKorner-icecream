@@ -104,11 +104,11 @@ body{
 /*small screen only*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .dropdown {
-        width:95%; 
+        width:75%; 
         float: none;   
     }
     .dropdown ul li a{
-        width:95%;
+        width:75%;
         float:none;
         font-size:12px;
     }
@@ -149,7 +149,7 @@ body{
     width:400px;
     margin-top: 20px;
     background-color: #F1F1F1;
-    opacity: .70;
+    opacity: .50;
 }
 .loc h4{
     text-align: center;
@@ -174,16 +174,17 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    background-color: #F1F1F1;
-    opacity: .80;
-    border:2px black solid;
+    border: 2px solid rgb(202, 7, 7);
 }
+
 #history h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: red;
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 10px;
+    text-shadow: #1d1c1c 2px 2px 2px;
+    font-weight: 900;
     
 }
 #history img{
@@ -201,11 +202,12 @@ body{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    color:whitesmoke;
 }
 
 .katies p{
     font-size: 16px;
-    color: black;
+    color:whitesmoke;
     padding-bottom: 10px;
     
 }
@@ -216,16 +218,16 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: #F1F1F1;
-    opacity: .70;
 }
 
 #icecream h2{
     text-align: center;
-    color:blue;
+    color:red;
     margin-top:10px;
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
+    text-shadow: #1d1c1c 2px 2px 2px;
+    font-weight: 900;
 }
 
 #icecream > div{
@@ -234,7 +236,8 @@ body{
     flex-wrap: wrap;
     margin:10px;
     padding-left:10px;
-    border: 2px solid black;
+    border: 2px solid rgb(202, 7, 7);
+    color:whitesmoke;
 }
 
 #icecream li{
@@ -248,16 +251,14 @@ body{
 .trivia{
     display: flex;
     flex-direction: row;
-    margin-top:20px;
+    margin-top:10px;
     align-content: center;
     justify-content:space-around;
     flex-wrap: wrap;
-    background-color:#F1F1F1;
-    opacity:.75;
 }
 
 .trivia div{
-    border: #1d1c1c 2px solid;
+    border: 2px solid rgb(202, 7, 7);
     padding:5px 5px 5px;
     width:350px;
     margin-top:5px;
@@ -267,15 +268,18 @@ body{
     width:100%;
     margin-bottom: 10px;
     padding-top:10px;
-    font-size: 20px;
+    font-size: 30px;
     color:red;
     font-family: 'Dancing Script', cursive;
     text-align: center;
+    text-shadow: #1d1c1c 2px 2px 2px;
+    font-weight: 900;
 }
 .trivia li{
     display: flex;
     text-align: justify;
     padding:5px;
+    color:whitesmoke;
 }
 .trivia img{
     display: flex;
@@ -288,49 +292,46 @@ body{
     flex-direction: row;
     justify-content:space-around;
     flex-wrap: wrap; 
-    background-color:#F1F1F1;
-    opacity: .70;
     align-content: center;
+    border:2px red solid;
 }
 #katiesflavor span, h4{
     width:100%;
     margin-top: 5px;
     text-align: center;
-    font-size:25px;
+    font-size:35px;
     color:red;
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #1d1c1c 2px 2px 2px;
+    font-weight: 900;
 }
 #nutri p{
     font-size:18px;
-    color:blue;
+    color:whitesmoke;
     font-family: 'Luckiest Guy', cursive;
 }
 #katiesflavor div{
     justify-content: space-around;
     margin-top: 20px;
-    background-color: #F1F1F1;
-    opacity: .70;
 }
 #katiesflavor li{
     font-size:16px;
-    color: blue;
+    color:whitesmoke;
     padding:2px 2px;
     font-weight: 600;
 }
 .popular p, h5{
     font-size:16px;
     text-align: left;
-    color: #b30505;
+    color: #fa2424;
 }
 .others{
     display: flex;
     flex-direction: row;
     padding-left: 50px;
-    background-color: #F1F1F1;
-    opacity: .70;
     justify-content: center;
     margin-top: 10px;
+    border:2px red solid;
 }
 .others > div{
     padding:5px 5px 5px;
@@ -341,7 +342,9 @@ body{
     width:100%;
     margin-top: 5px;
     text-align: left;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #1d1c1c 2px 2px 2px;
     color:red;
     font-weight:600;
     padding-bottom: 5px;
@@ -349,7 +352,7 @@ body{
 
 .others li{
     font-size:16px;
-    color: blue;
+    color: whitesmoke;
     padding:2px 2px;
     font-weight:600;
 }
@@ -362,8 +365,6 @@ body{
     margin-top:10px;
     justify-content:space-around;
     flex-wrap: wrap; 
-    background-color:#F1F1F1;
-    opacity: .70;
     align-content: center;
 }
 #nutri h4{
@@ -374,16 +375,18 @@ body{
 #nutri p{
     padding-bottom: 10px;
     text-align: center;
+    color:red;
+    font-size:20px;
 }
 
 .nutritional{
     display: flex;
     flex-direction: row;
-    background-color: #F1F1F1;
 }
 .nutritional div{
-    border:2px black solid;
+    border:2px red solid;
     background-color:rgb(240, 175, 175);
+    margin-right:5px;
 }
 
     
@@ -401,11 +404,9 @@ body{
 #franchise{
     display: flex;
     flex-direction: column;
-    background-color: #F1F1F1;
     justify-content: center;
     align-items: center;
-    opacity: .70;
-    border: #1d1c1c 2px solid;
+    border: red 2px solid;
     padding:15px 15px;
 }
 #franchise h2{
@@ -422,8 +423,8 @@ body{
     color: blue;
 }
 #franchise p{
-    font-size:16px;
-    color:rgb(15, 1, 1);    
+    font-size:18px;
+    color:whitesmoke;    
 }
 
 #application ul{
@@ -432,14 +433,21 @@ body{
     font-weight: 700;
     font-size:18px;
 }
+
 #application a{
     background-color: #f44336;
     color:#F1F1F1;
-    padding: 10px 10px;
+    padding: 5px 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border: #1d1c1c 1px solid;
+    border: red 1px solid;
+    border-radius:5px;
+}
+
+#application a:hover{
+    background-color: #555555;
+    color: white;
 }
 
 /*footer*/
