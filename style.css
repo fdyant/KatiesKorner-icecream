@@ -104,13 +104,16 @@ body{
 /*small screen only*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .dropdown {
-        width:75%; 
+        width:95%; 
         float: none;   
     }
     .dropdown ul li a{
-        width:75%;
+        width:95%;
         float:none;
         font-size:12px;
+    }
+    .dropdown ul li {
+        width:75%;
     }
 }
 
@@ -143,23 +146,25 @@ body{
 }
 
 .location div{
-    border: #1d1c1c 2px solid;
+    border: red 2px solid;
     padding:5px 5px 5px;
     align-content: space-around;
     width:400px;
     margin-top: 20px;
-    background-color: #F1F1F1;
-    opacity: .50;
 }
-.loc h4{
+.location h4{
     text-align: center;
-    color:blue;
-    font-size: 16px;
+    color:rgb(138, 138, 252);
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 2px;
 }
 .loc h5, address{
     text-align:center;
     font-size:16px;
     padding:5px 5px;
+    color:whitesmoke;
+    font-weight: bolder;
 }
 /*small screen only*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
