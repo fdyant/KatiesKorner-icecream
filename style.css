@@ -2,187 +2,167 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    
 }
-
 body{
-    font-family: 'Courier New', Courier, monospace;
-    background-image: url("https://images.unsplash.com/photo-1560801530-34efebfecba8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+main {
+    min-height: 100vh;
+    width:100%;
+    background: url("https://images.unsplash.com/photo-1560801530-34efebfecba8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
+}
+/*navigation*/
+.container-header{
+    margin: 0 auto;
+}
+.container-menu{
+    max-width: 700px;
+    margin: 0 auto;
+}
+nav {
+    background-color: #0b0e14;
+    color: #EFEFEF; 
+}
+nav .container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.menu-button{
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        margin-right: 20px;
+        padding: 10px 20px;
+        background-color:#dd0b0b;
+}
+.nav-menu{
+    background-color: #d68888;
+    color: #EFEFEF;
+    display: flex;
+    justify-content: center; 
+}
+.nav-menu .container-menu{
+    padding: 1.5em;
+    display: flex; 
+}
+.nav-menu .container-menu ul {
+    list-style: none; 
+}
+.container-menu ul li{
+    padding: .25em 2em;
+    text-transform: uppercase;
+}
+.container-menu ul li:first-child {
+    text-transform: uppercase;
+    color: #dd1010;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+.container-menu a{
+    list-style: none;
+    color:rgb(65, 21, 10);
+    text-decoration: none;
+}
+.hide {
+    display: none; 
 }
 
-.logo{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-bottom: 10px;
-}
 .logo img{
     width:100px;
-    margin-top: 20px;
+    margin-top:15px;
 }
-.header{
-    text-align: center;
-    padding:15px 15px;
-    
+
+/* running text*/
+.showcase{
+    Width:400px;
+    height:200px;
+    margin:150px auto;
 }
-.flag img {
-    width:100px;
-    float: right;
-}
-.header h2{
-    font-family: 'Dancing Script', cursive;
-    font-size:50px;
-    color:rgb(245, 9, 9) ; 
-    text-shadow: 2px 2px 2px whitesmoke;
-}
-.header h3{
-    font-family: 'Luckiest Guy', cursive;
+.showcase h1{
+    font-size: 3rem;
+    color:rgb(240, 8, 46);
+    text-shadow: #fff 2px 2px;
     letter-spacing: 2px;
-    font-size: 25px;
-    color: rgb(50, 50, 248);
-    text-align: center; 
-    text-shadow: 2px 2px 2px whitesmoke;
-}
-/*small screen only
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .logo img, 
-    .flag img{
-    width: 75%;
-    }
-    .header{
-    font-size:14px;
-    }
-}
-*/
-
-/*dropdown menu*/
-.dropdown {
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    z-index:1;
-}
-.dropdown ul{
-    margin:auto;
-    padding: 0px; 
-    list-style: none;
-}
-
-.dropdown ul li {
-    float: left;
-    width:200px;
-    background-color: rgb(207, 18, 18);
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    margin:2px;
-    opacity:.8;
-}
-
-.dropdown ul li a {
-    text-decoration: none;
-    color:#F1F1F1;
-    display: block;
-    
-}
-.dropdown ul li a:hover{
-    background-color: rgb(35, 35, 61);
     text-align: center;
 }
-.dropdown ul li ul li{
-    display: none;
-    background-color: rgb(156, 71, 71);
+.text-js{
+    opacity: 0;
 }
 
-.dropdown ul li:hover ul li {
-    display:block;
-}
-
-/*small screen only*/
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .dropdown {
-        width:95%; 
-        float: none;   
-    }
-    .dropdown ul li a{
-        width:95%;
-        float:none;
-        font-size:18px;
-    }
-    .dropdown ul li {
-        width:75%;
-    }
-}
 
 /*LOCATIONS*/
 
 .location {
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
-    margin-top:10px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color:#2e231c
 }
 
-.location span{
-    width:100%;
-    margin-bottom: 5px;
-}
 .loc img{
     width:70px;
     float: left;
     margin-left: 20px;
 }
-.location p{
-    font-size: 35px;
-    text-align: center;
-    color:rgb(245, 9, 9) ;
-    letter-spacing: 2px;
-    font-family: 'Luckiest Guy', cursive;
-    text-shadow: 2px 2px 2px #1d1c1c;
+.loc{
+    background-color:#f7f0f2
 }
-
 .location div{
-    border: red 2px solid;
+    border: rgb(231, 6, 6) 2px solid;
     padding:5px 5px 5px;
     align-content: space-around;
-    width:400px;
-    margin-top: 20px;
+    width:300px;
+    height: 150px;
+    margin-top: 50px;
 }
 .location h4{
     text-align: center;
-    color:rgb(138, 138, 252);
     font-size: 20px;
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 2px;
+    color:rgb(15, 14, 14);
 }
 .loc h5, address{
     text-align:center;
     font-size:16px;
-    padding:5px 5px;
-    color:whitesmoke;
+    padding:15px 15px;
     font-weight: bolder;
+    color: rgb(17, 12, 11);
 }
-/*small screen only*/
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .location div{
-        width:95%;
-    }
-}
+
 /*KATIES HISTORY*/
 
-#history{
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    border: 2px solid rgb(202, 7, 7);
+.history{
+    max-height: fit-content;
+    background-color: rgb(153, 88, 113);
 }
 
-#history h2{
+.katies{
+    padding-top:20px;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+.katies img{
+    width:500px;
+    padding:50px 30px;
+}
+.storeStory{
+    width:650px;
+}
+.katies p {
+    text-align:justify;
+    letter-spacing: 1.5px;
+    color:#fff;
+}
+.katies h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
     color: red;
@@ -190,31 +170,6 @@ body{
     padding-bottom: 10px;
     text-shadow: #1d1c1c 2px 2px 2px;
     font-weight: 900;
-    
-}
-#history img{
-    width:400px;
-    padding-top:10px;
-}
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    #history img{
-        width:70%;
-    }
-}
-
-
-.katies{
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    color:whitesmoke;
-}
-
-.katies p{
-    font-size: 16px;
-    color:whitesmoke;
-    padding-bottom: 10px;
-    
 }
 
 /*iCECREAM HISTORY*/
@@ -292,28 +247,26 @@ body{
 }
 /*FLAVOR*/
 
+.flavor{
+    min-height: 100vh;
+    background-color: rgb(126, 38, 38);
+}
 #katiesflavor{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     flex-wrap: wrap; 
     align-content: center;
-    border:2px red solid;
+    
 }
 #katiesflavor span, h4{
     width:100%;
     margin-top: 5px;
     text-align: center;
     font-size:35px;
-    color:red;
+    color:#F1F1F1;
     font-family: 'Dancing Script', cursive;
-    text-shadow: #1d1c1c 2px 2px 2px;
     font-weight: 900;
-}
-#nutri p{
-    font-size:18px;
-    color:whitesmoke;
-    font-family: 'Luckiest Guy', cursive;
 }
 #katiesflavor div{
     justify-content: space-around;
@@ -328,7 +281,7 @@ body{
 .popular p, h5{
     font-size:16px;
     text-align: left;
-    color: #fa2424;
+    color: #cf8080;;
 }
 .others{
     display: flex;
@@ -336,7 +289,6 @@ body{
     padding-left: 50px;
     justify-content: center;
     margin-top: 10px;
-    border:2px red solid;
 }
 .others > div{
     padding:5px 5px 5px;
@@ -349,12 +301,10 @@ body{
     text-align: left;
     font-size: 30px;
     font-family: 'Dancing Script', cursive;
-    text-shadow: #1d1c1c 2px 2px 2px;
-    color:red;
+    color:#F1F1F1;
     font-weight:600;
     padding-bottom: 5px;
 }
-
 .others li{
     font-size:16px;
     color: whitesmoke;
@@ -362,50 +312,46 @@ body{
     font-weight:600;
 }
 
-/*nutritional*/
+/*nutritional-info*/
 
-#nutri{
-    display: flex;
-    flex-direction: row;
-    margin-top:10px;
-    justify-content:space-around;
-    flex-wrap: wrap; 
-    align-content: center;
+.nutri-info{
+    min-height: 80vh;
+    text-align: center;
+    background-color:rgb(92, 40, 54);
 }
-#nutri h4{
-    padding-top: 10px;
+.nutri h1{
+    padding-top: 20px;
     padding-bottom: 20px;
-    text-align: center;
+    font-family: 'Dancing Script', cursive;
 }
-#nutri p{
-    padding-bottom: 10px;
-    text-align: center;
-    color:red;
-    font-size:20px;
+.nutri h3{
+    padding-bottom: 30px;
 }
-
 .nutritional{
+    justify-content: space-around;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
-.nutritional div{
-    border:2px red solid;
-    background-color:rgb(240, 175, 175);
-    margin-right:5px;
+.calories{
+    width: 375px;
+    height: 500px;
+    border:2px rgb(247, 239, 239) solid;
+    background-color:rgb(236, 90, 90);
 }
-
-    
-.nutritional img{
-    width:100%;
-    padding: 5px 20px 20px;
+.calories img{
+    padding-top:30px;
 }
-.nutritional h5{
+.calories h3, h5{
+    padding-top:10px;
     text-align: center;
-    color:blue;
-    font-size: 14px;
+    color:#F1F1F1;
 }
 
 /*Contact Us*/
+.contact{
+    max-height: fit-content;
+    background-color:#b97e9c;
+}
 #franchise{
     display: flex;
     flex-direction: column;
@@ -415,17 +361,17 @@ body{
     padding:15px 15px;
 }
 #franchise h2{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     color:rgb(245, 9, 9) ;
     text-shadow: 2px 2px 2px black;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Dancing Script', cursive;
     padding-bottom: 20px;
 }
 #franchise h3{
     padding:10px 10px;
     font-size: 20px;
-    color: blue;
+    color: rgb(209, 35, 35);
 }
 #franchise p{
     font-size:18px;
@@ -434,7 +380,7 @@ body{
 
 #application ul{
     padding: 25px 20px;
-    color: #eb1515;
+    color: #241d1d;
     font-weight: 700;
     font-size:18px;
 }
@@ -466,4 +412,6 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
+
+
 
