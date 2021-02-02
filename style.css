@@ -107,19 +107,17 @@ nav .container-header {
     flex-wrap: wrap;
     background-color:#2e231c
 }
-
 .loc img{
     width:70px;
     float: left;
     margin-left: 20px;
 }
-.loc{
+.loc {
     background-color:#f7f0f2
 }
-.location div{
+.location > div{
     border: rgb(231, 6, 6) 2px solid;
     padding:5px 5px 5px;
-    align-content: space-around;
     width:300px;
     height: 150px;
     margin-top: 50px;
